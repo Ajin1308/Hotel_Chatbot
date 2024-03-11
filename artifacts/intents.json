@@ -1,0 +1,87 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "responses": ["Hello there. Tell me how can I help you?", "Hi there. What brings you here today?", "Great to see you. Looking for something?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep."]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Have a great night.", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That was helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!", "You're Welcome, I hope I was helpfull for you"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to ask for help."]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
+     "responses": ["I'm a Virtual Assistant, helping you with making reservation, cancelation and so on.", "I am your Virtual Assistant, I deal with things that are related to the Hotel."]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?","How can you help me?","What are the things you can do for me?"],
+        "responses": ["I can make reservation, I can cancel them, I can check for the availability."]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by Mr. Ajin T", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you.", "Nice to meet you. How are you?", "That's a great name by the way."]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more", "Nothing else", "All done", "No, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay, See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer","You are Wrong"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "contact",
+        "patterns": ["Can I get phone call assistance?","Can you please provide customer care details?","I don't need virtual assistance","Can you connect me your hotel manager?"],
+        "responses": ["Ofcourse, Here is the contact details : Ajin (Manager) : +91 1234567891", "Okay, Ajin (Manager) : +91 1234567891","Oh okay, Here is an assistant you can count on, Ajin (Manager) : +91 1234567891", "Ofcourse, Ajin (Manager) : +91 1234567891"]
+    },
+    {"tag": "booking",
+    "patterns": ["I need to make a Reservation", "I would like to book a Reservtion", "Reservation for ."],
+    "responses": ["So nice of you, Please provide your Name: \n Phone Number: +91 \n Table for : \n Time: HH:MM:AM/PM \n Date: DD:MM:YYYY"]
+    },
+    {"tag": "cancel",
+    "patterns": ["I need to cancel my Reservation", "I would like to cancel a Reservtion", "Cancel my reservation", "I don't need my reservation anymore, Please cancel."],
+    "responses": ["Ohh Okayy, Please provide your Name: \n Phone Number: +91 \n Table for : \n Time: HH:MM:AM/PM \n Date: DD:MM:YYYY"]
+    }
+]
+}
