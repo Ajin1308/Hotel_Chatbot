@@ -128,13 +128,13 @@ if __name__ == "__main__":
     model = train_model(dataset, input_size, output_size, hidden_size, learning_rate, num_epochs, batch_size)
 
     # Evaluate model
-    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=2)
-    accuracy, precision, recall, f1 = evaluate_model(model, dataloader)
+    # dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=2)
+    # accuracy, precision, recall, f1 = evaluate_model(model, dataloader)
 
-    print(f'Accuracy: {accuracy:.4f}')
-    print(f'Precision: {precision:.4f}')
-    print(f'Recall: {recall:.4f}')
-    print(f'F1-score: {f1:.4f}')
+    # print(f'Accuracy: {accuracy:.4f}')
+    # print(f'Precision: {precision:.4f}')
+    # print(f'Recall: {recall:.4f}')
+    # print(f'F1-score: {f1:.4f}')
 
     # Save model
     save_model(model, input_size, output_size, hidden_size, all_words, tags, model_file)

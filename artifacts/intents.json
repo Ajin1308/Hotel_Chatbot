@@ -1,6 +1,6 @@
 {"intents": [
     {"tag": "greeting",
-     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Heyyy", "Hii", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
      "responses": ["Hello there. Tell me how can I help you?", "Hi there. What brings you here today?", "Great to see you. Looking for something?"]
     },
     {"tag": "morning",
@@ -36,7 +36,7 @@
      "responses": ["I'm a Virtual Assistant, helping you with making reservation, cancelation and so on.", "I am your Virtual Assistant, I deal with things that are related to the Hotel."]
     },
     {"tag": "skill",
-        "patterns": ["What can you do?","How can you help me?","What are the things you can do for me?"],
+        "patterns": ["What can you do?","How can you help me?","What are the things you can do for me?","What are you?"],
         "responses": ["I can make reservation, I can cancel them, I can check for the availability."]
     },
     {"tag": "creation",
@@ -52,8 +52,8 @@
     "responses": ["Sure. Tell me how can i assist you", "Yes, sure. How can I help you?"]
     },
     {"tag": "casual",
-        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
-        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine"],
+        "responses": ["Haa, Yaaaa", "Yaaa..", "mmhmmm", "Okayyy","Okay fine"]
     },
     {"tag": "done",
         "patterns": ["That's all.", "I don't have anything more", "Nothing else", "All done", "No, that would be all"],
@@ -77,11 +77,19 @@
     },
     {"tag": "booking",
     "patterns": ["I need to make a Reservation", "I would like to book a Reservtion", "Reservation for ."],
-    "responses": ["So nice of you, Please provide your Name: \n Phone Number: +91 \n Table for : \n Time: HH:MM:AM/PM \n Date: DD:MM:YYYY"]
+    "responses": ["So nice of you, Please provide your\n Name: \n Phone Number: +91 \n Table for : \n Time: HH:MM:AM/PM \n Date: DD:MM:YYYY"]
     },
     {"tag": "cancel",
     "patterns": ["I need to cancel my Reservation", "I would like to cancel a Reservtion", "Cancel my reservation", "I don't need my reservation anymore, Please cancel."],
-    "responses": ["Ohh Okayy, Please provide your Name: \n Phone Number: +91 \n Table for : \n Time: HH:MM:AM/PM \n Date: DD:MM:YYYY"]
+    "responses": ["Ohh Okayy, Please provide your\n Name: \n Phone Number: +91 \n Table for : \n Time: HH:MM:AM/PM \n Date: DD:MM:YYYY"]
+    },
+    {"tag":"booking_history",
+    "patterns": ["Reservation\nName: \nPhone Number: +91 \nTable for : \nTime: : : \nDate: : : "],
+    "responses":["Thank you for booking a Reservation at Hotel Ruchiyoram.","Thank you, We Welcome you to Ruchiyoram.","Done"]
+    },
+    {"tag":"cancel_history",
+    "patterns": ["Cancel\nName: \nPhone Number: +91 \nTable for : \nTime: : : \nDate: : : "],
+    "responses": ["Done! If there were any problem, We are Sorry","Cancelation Done!"]
     }
 ]
 }
