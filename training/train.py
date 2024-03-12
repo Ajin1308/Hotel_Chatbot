@@ -9,17 +9,26 @@ from model.model import NeuralNet
 
 
 def open_dataset(file_path):
+    '''
+    This function is used to load intent.json file. 'r' -> read
+    
+    '''
     with open(file_path, 'r') as f:
         intent_data = json.load(f)
     return intent_data
 
 
 def preprocess_intent_data(intents):
-
+    '''
+    This function is used to preprocess intents.json file.
+    returns 3 lists
+    '''
+    #A list containing all the unique words in the dataset.
     all_words = []
+    #A list containing all the unique tags (labels) in the dataset.
     tags = []
+    #A list of tuples, where each tuple contains a sentence (or pattern) and its corresponding tag.    
     xy = []
-
 
     for intent in intents['intents']:
         tag = intent['tag']
@@ -38,7 +47,10 @@ def preprocess_intent_data(intents):
 
 
 def split_data(all_words,tags,xy):
+    '''
+    This function is used to split the intent data into x_train and y_train.
 
+    '''
     X_train = []
     y_train = []
 
