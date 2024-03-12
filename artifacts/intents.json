@@ -1,0 +1,119 @@
+{"intents": [
+    {"tag": "greeting",
+        "patterns": ["Hi", "Hey", "Is anyone there?","Hi there","Haai", "Hello", "Heyyy", "Hii", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+        "responses": ["Hello there. Tell me how can I help you?", "Hi there. What brings you here today?", "Great to see you. Looking for something?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you are fine."]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Have a great night.", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+        "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That was helpful", "Thanks for the help", "Than you very much"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!", "You're Welcome, I hope I was helpfull for you"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to ask for help."]
+    },
+    {"tag": "about",
+        "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself","What service are you providing?","what help can you provide?","How can you help me?"],
+        "responses": ["I'm a HOTBOT, helping you with\nmaking reservations\nclearing doubts about our hotel", "I am your Chat bot Assistant HOTBT, I deal with things that are related to the Hotel Ruchiyoram"]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by Mr. Ajin T", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you.", "Nice to meet you. How are you?", "That's a great name by the way."]
+    },
+    {"tag": "help",
+        "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+        "responses": ["Sure. Tell me how can i assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine"],
+        "responses": ["Haa, Yaaaa", "Yaaa..", "mmhmmm", "Okayyy","Okay fine","Anything else?"]
+    },
+    {"tag":"no",
+        "patterns": ["no, am okay","no","Nop","Naah","Nah","Nohh"],
+        "responses":["okay, fine","Hmm, okay"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more", "Nothing else", "All done", "No, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay, See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer","You are Wrong"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "contact",
+        "patterns": ["Can I get phone call assistance?","Can you please provide customer care details?","I don't need virtual assistance","Can you connect me your hotel manager?","Provide details of frontend assistant"],
+        "responses": ["Ofcourse, Here is the contact details : Ajin (Manager) : +91 1234567891", "Okay, Ajin (Manager) : +91 1234567891","Oh okay, Here is an assistant you can count on, Ajin (Manager) : +91 1234567891", "Ofcourse, Ajin (Manager) : +91 1234567891"]
+    },
+    {"tag": "booking",
+        "patterns": ["I need to make a Reservation", "I would like to book a Reservtion", "Reservation for ."],
+        "responses": ["So nice of you, Please provide your\n Name ,\nCheck in Date ,\n Check out Date"]
+    },
+    {"tag": "cancel",
+        "patterns": ["I need to cancel my Reservation", "I would like to cancel a Reservtion", "Cancel my reservation", "I don't need my reservation anymore, Please cancel."],
+        "responses": ["Ohh Okay, For that you have to contact our frontent desk!"]
+    },
+    {"tag":"booking_history",
+        "patterns": ["Name: name\nCheck in Date : 00/00/0000\n Check out Date : 00/00/0000"],
+        "responses":["Thank you for booking a Reservation.","Thank you, We Welcome you to our Hotel","Deal Done"]
+    },
+    {"tag": "check_availability",
+        "patterns": ["Do you have any available rooms?", "Is there any room available?", "Can I book a room?"],
+        "responses": ["Sure! Please provide me with your check-in and check-out dates.", "Yes, we have available rooms. When would you like to check-in and check-out?"]
+    },
+    {"tag": "room_types",
+        "patterns": ["What types of rooms do you offer?", "Tell me about your room options","Room options please!"],
+        "responses": ["We offer a variety of rooms including standard, deluxe, and suites. Which one are you interested in?"]
+    },
+    {"tag": "faq_breakfast",
+        "patterns": ["Is breakfast included?", "Do you serve breakfast?", "What time is breakfast?"],
+        "responses": ["Yes, breakfast is included with your stay. It is served from 7:00 AM to 10:00 AM in the dining area."]
+    },
+    {"tag": "amenity_pool",
+        "patterns": ["Do you have a pool?", "Is there a swimming pool?", "Can I use the pool?"],
+        "responses": ["Yes, we have a swimming pool available for our guests to use. It is open from 9:00 AM to 9:00 PM."]
+    },
+    {"tag": "local_attractions",
+        "patterns": ["What are some nearby attractions?", "Can you recommend places to visit nearby?","Any tourist places nearby?"],
+        "responses": ["Some nearby attractions include the beach, local museums, and shopping centers. We can provide you with more information upon request."]
+    },
+    {"tag": "room_service",
+        "patterns": ["Do you offer room service?", "Can I order food to my room?"],
+        "responses": ["Yes, we offer room service","You can order from our menu and have it delivered directly to your room."]
+    },
+    {"tag": "late_checkout",
+        "patterns": ["Is late checkout available?", "Can I extend my checkout time?"],
+        "responses": ["Late checkout is subject to availability. Please inquire at the front desk on the day of your departure."]
+    }
+]
+}
