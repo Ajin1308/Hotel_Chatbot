@@ -15,18 +15,18 @@ pip install -r requirements.txt
 Once the dependencies are installed, you can run the chatbot using Streamlit. Execute the following command:
 
 ```bash
-streamlit run src/app.py
+streamlit run app.py
 ```
 
 This will start the chatbot interface, allowing users to interact with it.
 
 ## Project Structure
 
-- **src/app.py**: This file contains the Streamlit application code for running the chatbot interface.
+- **app.py**: This file contains the Streamlit application code for running the chatbot interface.
 
-- **model/model.py**: The `model.py` file contains the implementation of the neural network model used for the chatbot.
+- **src/model.py**: The `model.py` file contains the implementation of the neural network model used for the chatbot.
 
-- **utils/nltk_utils.py**: The `nltk_utils.py` file provides utilities such as tokenizer, stemmer, and bag of words used for preprocessing text data.
+- **src/utils.py**: The `utils.py` file provides utilities such as tokenizer, stemmer, and bag of words used for preprocessing text data.
 
 - **training/train.py**: The `train.py` file is responsible for training the chatbot model.
 
