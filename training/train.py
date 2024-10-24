@@ -1,11 +1,11 @@
 import json
-from utils.nltk_utils import tokenize, stem, bag_of_words
+from src.utils import tokenize, stem, bag_of_words
 import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
 from training.evaluation import evaluate_model
-from model.model import NeuralNet
+from src.model import NeuralNet
 
 
 def open_dataset(file_path):
